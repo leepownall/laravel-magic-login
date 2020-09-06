@@ -30,7 +30,7 @@ class MagicLoginTest extends TestCase
         $this->withoutExceptionHandling();
 
         $this->expectException(CouldNotLogin::class);
-        $this->expectExceptionMessage('The signature `invalid-signature` is invalid.');
+        $this->expectExceptionMessage('The signature is invalid or the link has expired.');
 
         Carbon::setTestNow('2020-09-01 13:00:00');
 
@@ -43,6 +43,29 @@ class MagicLoginTest extends TestCase
             &redirect_to_url=%2F
             &user_class=pownall-magic_login-tests-user
             &signature=invalid-signature';
+
+        $this->get($url);
+
+        $this->assertGuest();
+    }
+
+    /** @test */
+    public function cannot_login_if_link_expired()
+    {
+        $this->withoutExceptionHandling();
+
+        $this->expectException(CouldNotLogin::class);
+        $this->expectExceptionMessage('The signature is invalid or the link has expired.');
+
+        Carbon::setTestNow('2020-09-01 13:00:00');
+
+        $user = factory(User::class)->create();
+
+        $this->assertGuest();
+
+        $url = MagicLogin::forUser($user)->expiresAt(now()->addMinutes(5))->generate();
+
+        Carbon::setTestNow('2020-09-01 13:10:00');
 
         $this->get($url);
 

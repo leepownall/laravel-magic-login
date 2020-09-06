@@ -6,8 +6,8 @@ use Exception;
 
 class CouldNotLogin extends Exception
 {
-    public static function hasInvalidSignature(string $signature): self
+    public static function hasInvalidSignatureOrHasExpired(): self
     {
-        return new static("The signature `{$signature}` is invalid.");
+        return new static("The signature is invalid or the link has expired.");
     }
 }

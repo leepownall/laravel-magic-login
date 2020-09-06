@@ -8,6 +8,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\URL;
 use Pownall\MagicLogin\Exceptions\CouldNotLogin;
 use Pownall\MagicLogin\UserClass;
 
@@ -15,9 +16,7 @@ class LoginUser extends Controller
 {
     public function __invoke(Request $request, string $userId): RedirectResponse
     {
-        if ($request->hasValidSignature() === false) {
-            throw CouldNotLogin::hasInvalidSignature($request->get('signature'));
-        }
+        throw_unless($request->hasValidSignature(), CouldNotLogin::hasInvalidSignatureOrHasExpired());
 
         /** @var Model $userModel */
         $userModel = UserClass::fromSlug($request->get('user_class'));
