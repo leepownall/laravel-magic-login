@@ -1,8 +1,8 @@
 # 
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/pownall/magic-login.svg?style=flat-square)](https://packagist.org/packages/pownall/magic-login)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/pownall/magic-login/run-tests?label=tests)](https://github.com/leepownall/magic-login/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Total Downloads](https://img.shields.io/packagist/dt/pownall/magic-login.svg?style=flat-square)](https://packagist.org/packages/pownall/magic-login)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/pownall/laravel-magic-login.svg?style=flat-square)](https://packagist.org/packages/pownall/laravel-magic-login)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/pownall/laravel-magic-login/run-tests?label=tests)](https://github.com/leepownall/laravel-magic-login/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Total Downloads](https://img.shields.io/packagist/dt/pownall/laravel-magic-login.svg?style=flat-square)](https://packagist.org/packages/pownall/laravel-magic-login)
 
 
 Allows you to create a temporary signed route that logs a user in. There is no config file, you define everything when generating the url.
