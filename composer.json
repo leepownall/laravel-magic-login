@@ -1,8 +1,11 @@
 {
     "name": "pownall/laravel-magic-login",
-    "description": "Allow users to login via a magic login.",
+    "description": "Passwordless login for Laravel. Allows users to login via a magic link.",
     "keywords": [
-        "magic-login"
+        "passwordless",
+        "passwordless-laravel",
+        "magic-login",
+        "magic-login-laravel"
     ],
     "homepage": "https://github.com/leepownall/magic-login",
     "license": "MIT",
