@@ -1,7 +1,7 @@
 # 
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/pownall/laravel-magic-login.svg?style=flat-square)](https://packagist.org/packages/pownall/laravel-magic-login)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/pownall/laravel-magic-login/run-tests?label=tests)](https://github.com/leepownall/laravel-magic-login/actions?query=workflow%3ATests+branch%3Amaster)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/leepownall/laravel-magic-login/Tests?label=tests)
 [![Total Downloads](https://img.shields.io/packagist/dt/pownall/laravel-magic-login.svg?style=flat-square)](https://packagist.org/packages/pownall/laravel-magic-login)
 
 
