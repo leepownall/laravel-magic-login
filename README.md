@@ -1,8 +1,8 @@
-# 
+# Laravel Magic Laravel
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/pownall/laravel-magic-login.svg?style=flat-square)](https://packagist.org/packages/pownall/laravel-magic-login)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/pownall/laravel-magic-login.svg)](https://packagist.org/packages/pownall/laravel-magic-login)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/leepownall/laravel-magic-login/Tests?label=tests)
-[![Total Downloads](https://img.shields.io/packagist/dt/pownall/laravel-magic-login.svg?style=flat-square)](https://packagist.org/packages/pownall/laravel-magic-login)
+[![Total Downloads](https://img.shields.io/packagist/dt/pownall/laravel-magic-login.svg)](https://packagist.org/packages/pownall/laravel-magic-login)
 
 
 Allows you to create a temporary signed route that logs a user in. There is no config file, you define everything when generating the url.
