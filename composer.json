@@ -25,7 +25,7 @@
     "require-dev": {
         "laravel/legacy-factories": "^1.0",
         "orchestra/testbench": "^5.2 || ^6.0",
-        "phpunit/phpunit": "^9.0",
+        "phpunit/phpunit": "^9.4",
         "vimeo/psalm": "^4.2"
     },
     "autoload": {
